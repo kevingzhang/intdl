@@ -111,3 +111,27 @@ Use one view (for example, a typical alert view ) as a pilot. Implement most fea
 - Once a view is done, go to testing procedure. When testing done, go to documentation procedure, then go to market
 
 ### Phrase four: Testing and improvements.
+
+# Pros cons and risk of using Meteor.js
+I have list many pros of using Meteor.js above. I am not going to repeat. I am going to list a few cons or risks of using Meteor as far as I know. Also I will put my solution and comments of those risks
+
+## Scalability
+One of the common concern of Meteor.js is scalability. Meteor benefits from socket.io for realtime update, it also comes with cons. When it support large quantity of concurrent users, scalibility will be a problem
+There are some discussion on this. The good part is that we do not need to worry too much about this. Because the large quantity of concurrent users means really large. As an enterprise Saas provider, we (almost) never reach that threshold. That is the concern of those social media platform.
+
+I assume we have less than 10000 concurrent users, we are good to go.
+
+## Testing
+
+Comparing to Angular, which is a mature technology, Meteor do not have an official testing platform yet. So far, we can use Laika, the current best testing platform for Meteor.js. It is not as good as what Angular can provide.
+My opinion is, given Meteor.js is fast growing. By the time when we need end-to-end testing, there might already have one testing platform released then.
+
+## New hire in the future
+Since Meteor.js is a new technology. One of the common concern is, what if we need more hands in the future. Is it easy to hire people who has Meteor.js skill?
+From my point of view, Meteor.js is easy to learn, even easier than Angular. As long as the infrastructure is build solid, the module can be easiler break down to pieces. Even a new hire has no skill of Meteor.js, as long as he know Javascript/Coffeescript, he can do the work without training, but Angular cannot.
+
+## Meteor upgrade and backward compatibility
+
+So far, Meteor is still in 0.8.*, a pre-release status. There might be issues caused by upgrade before version 1.0. From my previous experences ( I start from Meteor 0.5.*), every upgrade is smooth, although some source code need to be changed. The concepts has no change at all, it just get better and better.
+
+Meteor.js headquater is also San Francisco down town. We can easily join the active community. Once we are familiar with those people, technical help can be got in cost of battle of bear :)
