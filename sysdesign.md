@@ -88,29 +88,29 @@ Due to the realtime DDP featured by Meteor. Realtime alert is very easy. As long
 
 **TBD**
 
-## Development schedule
+# Development schedule
 
-### Phrase one: Product design and technical mockup
-#### Product design
+## Phrase one: Product design and technical mockup
+### Product design
 UI design, all the details, interactive design.
-#### Technical mockup
+### Technical mockup
 - Mockup on the layout,
 - data syncup,
 - communication between Meteor and backend service.
 - Create some testing data. Will be used to verify, or future unit test data
 - No UI detail need to be concern at this moment
 
-### Phrase two: Pilot view
+## Phrase two: Pilot view
 Use one view (for example, a typical alert view ) as a pilot. Implement most features of this view only.
 - Test the mockup, try to figure out all potential problem, performance evluation
 - Test the development speed. Estimate the overall implementation cost of all views
 - Show some pilot users, get feedback
 
-### Phrase three: Implement all views one by one. From high priority to low.
+## Phrase three: Implement all views one by one. From high priority to low.
 - If the market need some urgent views to be completed first, we can go those first. Once ready, we can start sale while development on other views keep going
 - Once a view is done, go to testing procedure. When testing done, go to documentation procedure, then go to market
 
-### Phrase four: Testing and improvements.
+## Phrase four: Testing and improvements.
 
 # Pros cons and risk of using Meteor.js
 I have list many pros of using Meteor.js above. I am not going to repeat. I am going to list a few cons or risks of using Meteor as far as I know. Also I will put my solution and comments of those risks
